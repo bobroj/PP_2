@@ -216,13 +216,102 @@ print(newlist)
 #tozhe tolko koroche
 
 print ("-------------")
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+#sortirovka po alfavitu
 print ("-------------")
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+#po nomeram
+
 print ("-------------")
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+#zadali sort po ubivaniu
+
 print ("-------------")
+
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+#sort po zadannoy function
+
 print ("-------------")
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort()
+print(thislist)
+# snachala zaglavnie
+
 print ("-------------")
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+#fixim sort na malie 
+
 print ("-------------")
+
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.reverse()
+print(thislist)
+
 print ("-------------")
+
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+#kopiruem listi
+
 print ("-------------")
+
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+#eshe metod kopirovat
+
+print ("-------------")
+
+list1 = ["a", "b", "c"]
+list2 = [1, 2, 3]
+
+list3 = list1 + list2
+print(list3)
+#soedinyaem listi
+
+print ("-------------")
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+#soedinyaem cherez forik
+
+print ("-------------")
+
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)
+#dobavlaem v konets
+
+print ("-------------")
+
+
 
 
