@@ -1,11 +1,10 @@
 def takes_movies(movies):
     x = 0
-    counter = 0
-    for i in movies:
-        x += int(i["imdb"])
-        counter += 1
 
-    return x/counter
+    for i in movies:
+        x += i["imdb"]
+
+    return x/len(movies)
 
 # Dictionary of movies
 
